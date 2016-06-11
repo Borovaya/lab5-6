@@ -3,18 +3,18 @@
 
 CTEST(test_suite, NO_ROOTS_test)
 {
-	const float a = 5, b = 4, c = 3;
-	float x1, x2;
-	const int expected_root_number = 0,
-		test = solve(a, b, c, &x1, &x2);
+	const float a = 5, b = 4, c = 3; //задаем переменные
+	float x1, x2;     //указываем что иксы такого же типа 
+	const int expected_root_number = 0,//указываем что нет корней 
+		test = solve(a, b, c, &x1, &x2);  //запускаем тест
 	ASSERT_EQUAL(expected_root_number, test);
 }
 
 CTEST(test_suite, ROOTS_NULL_test)
 {
-	const float a = 2, b = 4, c = 2;
+	const float a = 2, b = 4, c = 2;   //указываем переменные
 
-	const int test = solve(a, b, c, NULL, NULL),
+	const int test = solve(a, b, c, NULL, NULL),   
 		expected_root_number = -1;
 
 	ASSERT_EQUAL(expected_root_number, test);
