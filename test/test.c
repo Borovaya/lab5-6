@@ -14,8 +14,8 @@ CTEST(test_suite, ROOTS_NULL_test)
 {
 	const float a = 2, b = 4, c = 2;   //указываем переменные
 
-	const int test = solve(a, b, c, NULL, NULL),   
-		expected_root_number = -1;
+	const int test = solve(a, b, c, NULL, NULL),   // задали что если иксы равны нулю
+		expected_root_number = -1;        //
 
 	ASSERT_EQUAL(expected_root_number, test);
 }
