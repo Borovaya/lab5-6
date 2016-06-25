@@ -12,8 +12,8 @@ CTEST(test_suite, NO_ROOTS_test)   		//нет корней
 
 CTEST(test_suite, ROOTS_NULL_test)   			//корни равны нулю
 {
-	const float a = 2, b = 4, c = 2;	 	//указываем переменные
-	const int test = solve(a, b, c, NULL, NULL),   	// задали что если иксы равны нулю
+	const float a = 5, b = 4, c = 2;
+	const int test = solve(a, b, c, NULL, NULL),
 		expected_root_number = -1;
 
 	ASSERT_EQUAL(expected_root_number, test);
